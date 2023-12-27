@@ -4,7 +4,7 @@ import turtle
 wn = turtle.Screen()
 wn.title("Pong by Erin")
 wn.bgcolor("black")
-wn.setup(width=800, heigh=600)
+wn.setup(width=800, height=600)
 #tracer stops the window from updating
 wn.tracer(0)
 
