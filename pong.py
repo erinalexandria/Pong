@@ -27,6 +27,22 @@ paddle_b.penup() #no line drawn
 paddle_b.goto(350, 0)
 
 #Ball
+ball = turtle.Turtle()
+ball.speed(0) #speed of animation
+ball.shape("square")
+ball.color("white")
+ball.penup() #no line drawn
+ball.goto(0, 0)
+
+#function
+def paddle_a_up():
+    y = paddle_a.ycor()
+    y += 20 #adds 20 pixels to y coordinate
+    paddle_a.sety(y)
+
+#Keyboard binding
+wn.listen() #listening for keyboard input
+wn.onkeypress(paddle_a_up, "w") #when the user presses w, call the function paddle_a_up
 
 #main game loop
 while True:
